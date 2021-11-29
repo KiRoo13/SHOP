@@ -1,0 +1,26 @@
+.header {
+   padding: 20px 0;
+   width: 100%;
+   background-color: #222222;
+   &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__link {
+      text-decoration: none;
+      &:not(:last-child) {
+         margin-right: 31px;
+      }
+   }
+}
+
+.container {
+   max-width: 1160px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.__right {
+   margin-right: 41px;
+}
