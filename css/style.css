@@ -362,13 +362,16 @@
 }
 
 .catalog__menu__title {
+  padding-bottom: 16px;
+  margin-left: 15px;
+  width: 327px;
   display: block;
 }
 
 .catalog__menu[open] {
   color: #F16D7F;
-  -webkit-box-shadow: 7px 7px 5px rgba(194, 188, 188, 0.3);
-          box-shadow: 7px 7px 5px rgba(194, 188, 188, 0.3);
+  -webkit-box-shadow: 0px 0px 2px rgba(194, 188, 188, 0.3);
+          box-shadow: 0px 0px 2px rgba(194, 188, 188, 0.3);
 }
 
 .filter-img::after {
@@ -405,13 +408,78 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 304px;
+  margin-left: 23px;
+}
+
+.catalog__nav__wrap {
+  padding: 10px;
+  position: absolute;
+  width: 79px;
+  height: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.catalog__nav__wrap input:nth-child(1)::after {
+  content: "XS";
+  margin-left: 20px;
+}
+
+.catalog__nav__wrap input:nth-child(2)::after {
+  content: "S";
+  margin-left: 20px;
+}
+
+.catalog__nav__wrap input:nth-child(3)::after {
+  content: "M";
+  margin-left: 20px;
+}
+
+.catalog__nav__wrap input:nth-child(4)::after {
+  content: "L";
+  margin-left: 20px;
+}
+
+.catalog__nav__wrap input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+details > summary {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+details > summary:hover {
+  color: #F16D7F;
+}
+
+.catalog__nav__title::after {
+  content: url(/img/Cards/Vector.svg);
+  margin-left: 10px;
 }
 
 .catalog__menu__variants {
   background: #FFFFFF;
   position: absolute;
   z-index: 2;
+}
+
+.catalog__nav > a::after {
+  content: url(/img/Cards/Vector.svg);
+  margin-left: 10px;
 }
 
 .catalog__nav > a {
@@ -430,16 +498,6 @@
 .catalog__nav > details {
   margin-left: 28px;
   margin-right: 28px;
-}
-
-.catalog__nav__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .sliders__middle {
@@ -866,6 +924,182 @@
 
 .product--margin {
   margin-bottom: 128px;
+}
+
+.registration {
+  background: white;
+  height: 675px;
+}
+
+.registration__wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration__form__top {
+  margin-bottom: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.registration__form__top__title {
+  font-family: lato;
+  padding: 0px 0px 20px 0px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration__form__top__inp {
+  padding: 12px 272px 15px 17px;
+  width: 360px;
+  margin-bottom: 21px;
+}
+
+.registration__form__top__variant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration__form__top__variant p {
+  font-family: lato;
+}
+
+.registration__form__top__variant input {
+  margin-right: 10px;
+}
+
+.registration__form__top__variant input:not(:first-child) {
+  margin-left: 20px;
+}
+
+.registration__form__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.registration__form__bottom__title {
+  font-family: lato;
+  padding: 0px 0px 20px 0px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration__form__bottom__inp {
+  padding: 12px 272px 15px 17px;
+  width: 360px;
+  margin-bottom: 21px;
+}
+
+.registration__form__bottom__subtitle {
+  padding: 0px 0px 39px 0px;
+  width: 355px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration__form__bottom__link {
+  padding: 16px 30px 16px 29px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background: #F16D7F;
+}
+
+.registration__form__bottom__link::after {
+  content: url(/img/Cards/strelca.svg);
+  margin-left: 20px;
+}
+
+.registration__form__bottom__link:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: 1px solid #F16D7F;
+  color: #F16D7F;
+  background: white;
+}
+
+.registration__info {
+  margin-left: 128px;
+  height: 520px;
+}
+
+.registration__info__title {
+  font-family: lato;
+  padding: 0px 0px 22px 0px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration__info__subtitle {
+  padding-bottom: 21px;
+  font-family: lato;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration__info__list {
+  list-style-type: none;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration__info__list li::before {
+  content: url(/img/Cards/gal.svg);
+  margin-right: 23px;
+}
+
+.registration__info__list li:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .header {

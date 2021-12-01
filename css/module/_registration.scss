@@ -1,0 +1,130 @@
+.registration {
+   background: rgb(255, 255, 255);
+   height: 675px;
+   &__wrap {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__form {
+      &__top {
+         margin-bottom: 33px;
+         display: flex;
+         flex-direction: column;
+         align-items: baseline;
+         &__title {
+            font-family: lato;
+            padding: 0px 0px 20px 0px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 19px;
+            color: #222222;
+         }
+         &__inp {
+            padding: 12px 272px 15px 17px;
+            width: 360px;
+            margin-bottom: 21px;
+         }
+         &__variant {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+               font-family: lato;
+            }
+            input {
+               margin-right: 10px;
+               &:not(:first-child) {
+                  margin-left: 20px;
+               }
+            }
+         }
+      }
+      &__bottom {
+         display: flex;
+         flex-direction: column;
+         align-items: baseline;
+         &__title {
+            font-family: lato;
+            padding: 0px 0px 20px 0px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 19px;
+            color: #222222;
+         }
+         &__inp {
+            padding: 12px 272px 15px 17px;
+            width: 360px;
+            margin-bottom: 21px;
+         }
+         &__subtitle {
+            padding: 0px 0px 39px 0px;
+            width: 355px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+         }
+         &__link {
+            padding: 16px 30px 16px 29px;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            background: $color;
+            &::after {
+               content: url(/img/Cards/strelca.svg);
+               margin-left: 20px;
+            }
+            &:hover {
+               transform: rotate(360deg);
+               border-radius: 10px;
+               box-sizing: border-box;
+               transition: 0.4s;
+               outline: 1px solid $color;
+               color: $color;
+               background: rgb(255, 255, 255);
+            }
+         }
+      }
+   }
+   &__info {
+      margin-left: 128px;
+      height: 520px;
+      &__title {
+         font-family: lato;
+         padding: 0px 0px 22px 0px;
+         font-weight: 300;
+         font-size: 24px;
+         line-height: 29px;
+         color: #000000;
+      }
+      &__subtitle {
+         padding-bottom: 21px;
+         font-family: lato;
+         font-weight: 300;
+         font-size: 24px;
+         line-height: 29px;
+         color: #000000;
+      }
+      &__list {
+         list-style-type: none;
+         font-family: Lato;
+         font-weight: 300;
+         font-size: 24px;
+         line-height: 29px;
+         color: #000000;
+         li {
+            &::before {
+               content: url(/img/Cards/gal.svg);
+               margin-right: 23px;
+            }
+            &:not(:last-child) {
+               margin-bottom: 16px;
+            }
+         }
+         
+      }
+   }
+}
