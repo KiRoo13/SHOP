@@ -22,8 +22,9 @@
             color: #222222;
          }
          &__inp {
-            padding: 12px 272px 15px 17px;
+            padding: 0px 0px 0px 17px;
             width: 360px;
+            height: 44px;
             margin-bottom: 21px;
          }
          &__variant {
@@ -54,8 +55,9 @@
             color: #222222;
          }
          &__inp {
-            padding: 12px 272px 15px 17px;
+            padding: 0px 0px 0px 17px;
             width: 360px;
+            height: 44px;
             margin-bottom: 21px;
          }
          &__subtitle {
@@ -73,10 +75,6 @@
             line-height: 17px;
             color: #FFFFFF;
             background: $color;
-            &::after {
-               content: url(/img/Cards/strelca.svg);
-               margin-left: 20px;
-            }
             &:hover {
                transform: rotate(360deg);
                border-radius: 10px;

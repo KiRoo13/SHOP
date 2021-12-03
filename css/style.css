@@ -19,6 +19,10 @@
   max-width: 300px;
 }
 
+.font {
+  font-family: lato;
+}
+
 .promo__wrap {
   height: 100%;
   display: -webkit-box;
@@ -34,10 +38,12 @@
 
 .red {
   color: #F16D7F;
+  font-family: lato;
 }
 
 .size {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .category__wrap {
@@ -82,29 +88,36 @@
 }
 
 .category__text {
-  max-width: 110px;
+  text-align: center;
+  width: 158px;
   height: 50px;
   color: #fff;
 }
 
-._font {
+.category__text__widht {
+  width: 170px;
+}
+
+._font_red {
+  font-weight: bold;
   font-size: 24px;
+  color: #F16D7F;
 }
 
 .category__item:nth-child(1) {
-  background-image: url(../img/Caterory/women.png);
+  background: url(../img/Caterory/women.png);
 }
 
 .category__item:nth-child(2) {
-  background-image: url(../img/Caterory/men.png);
+  background: url(../img/Caterory/men.png);
 }
 
 .category__item:nth-child(3) {
-  background-image: url(../img/Caterory/kids.png);
+  background: url(../img/Caterory/kids.png);
 }
 
 .category__item:nth-child(4) {
-  background-image: url(../img/Caterory/accesories.png);
+  background: url(../img/Caterory/accesories.png);
 }
 
 .category {
@@ -159,6 +172,12 @@
 .product__card__top {
   position: relative;
   height: 420px;
+}
+
+.position {
+  position: absolute;
+  top: 9px;
+  left: 100px;
 }
 
 .product__card__top:hover {
@@ -374,8 +393,7 @@
           box-shadow: 0px 0px 2px rgba(194, 188, 188, 0.3);
 }
 
-.filter-img::after {
-  content: url(../img/filter.svg);
+.fa {
   margin-left: 11px;
 }
 
@@ -399,6 +417,7 @@
 }
 
 .container__wrap {
+  height: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,6 +431,7 @@
 }
 
 .catalog__nav__wrap {
+  z-index: 3;
   padding: 10px;
   position: absolute;
   width: 79px;
@@ -466,20 +486,10 @@ details > summary:hover {
   color: #F16D7F;
 }
 
-.catalog__nav__title::after {
-  content: url(/img/Cards/Vector.svg);
-  margin-left: 10px;
-}
-
 .catalog__menu__variants {
   background: #FFFFFF;
   position: absolute;
   z-index: 2;
-}
-
-.catalog__nav > a::after {
-  content: url(/img/Cards/Vector.svg);
-  margin-left: 10px;
 }
 
 .catalog__nav > a {
@@ -682,12 +692,6 @@ details > summary:hover {
   text-align: center;
 }
 
-.right__forms {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .right__top__title {
   font-weight: bold;
   font-size: 24px;
@@ -704,10 +708,10 @@ details > summary:hover {
 }
 
 .forms__button {
+  text-decoration: none;
   color: #fff;
   font-size: 14px;
   line-height: 17px;
-  border: none;
   padding: 10px;
   background: #F16D7F;
   border-top-right-radius: 10px;
@@ -751,11 +755,13 @@ details > summary:hover {
 .footer__contacts a {
   text-decoration: none;
   padding: 9px;
-  background-color: #fff;
+  background: #fff;
+  color: black;
 }
 
 .footer__contacts a:hover {
   background: #F16D7F;
+  color: #fff;
 }
 
 .footer__contacts a:not(:last-child) {
@@ -823,6 +829,64 @@ details > summary:hover {
   width: 641px;
 }
 
+.collection__container a {
+  position: relative;
+  border: 1px solid #F16D7F;
+  padding: 12px 30px 12px 60px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+
+.collection__container a::before {
+  content: url(../img/Collection/basket.svg);
+  position: absolute;
+  top: 8px;
+  left: 20px;
+}
+
+.collection__container a:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 10px;
+  padding: 17px 35px 17px 65px;
+  font-size: 17px;
+}
+
+.collection__container > h4 {
+  font-family: lato;
+  margin-top: 12px;
+  margin-bottom: 48px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+}
+
+.collection__container > p {
+  font-family: lato;
+  margin-bottom: 12px;
+  display: block;
+  width: 555px;
+  text-align: center;
+}
+
+.collection__container > span {
+  margin-top: 32px;
+  margin-bottom: 65px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.collection__container > hr {
+  margin-bottom: 65px;
+  min-width: 641px;
+  border: 1px solid #EAEAEA;
+}
+
 .container--border {
   margin-bottom: 130px;
   background: #FFFFFF;
@@ -844,78 +908,21 @@ details > summary:hover {
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
-  border-bottom: 3px solid #F16D7F;
 }
 
-.collection__container > h4 {
-  margin-bottom: 48px;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-  color: #4D4D4D;
-}
-
-.collection__container > p {
-  margin-bottom: 32px;
-  display: block;
-  width: 555px;
-  text-align: center;
-}
-
-.collection__container > span {
-  margin-bottom: 65px;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #F16D7F;
-}
-
-.collection__container > hr {
-  margin-bottom: 65px;
-  min-width: 641px;
-  border: 1px solid #EAEAEA;
+.decor {
+  margin: 0 auto;
+  background: #F16D7F;
+  width: 63px;
+  height: 3px;
 }
 
 .collection__nav > details > summary {
   display: block;
 }
 
-.collection__nav > details > summary::after {
-  content: url(../img/Collection/Vector.svg);
-  margin-left: 9px;
-}
-
 .collection__nav {
   margin-bottom: 49px;
-}
-
-.collection__container > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #FF6A6A;
-  min-width: 211px;
-  min-height: 47px;
-}
-
-.collection__container > div > a {
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 19px;
-  color: #F16D7F;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-.collection__container > div > a::before {
-  content: url(../img/Collection/basket.svg);
-  margin-right: 23px;
 }
 
 .collection__nav > details:not(:last-child) {
@@ -968,8 +975,9 @@ details > summary:hover {
 }
 
 .registration__form__top__inp {
-  padding: 12px 272px 15px 17px;
+  padding: 0px 0px 0px 17px;
   width: 360px;
+  height: 44px;
   margin-bottom: 21px;
 }
 
@@ -1020,8 +1028,9 @@ details > summary:hover {
 }
 
 .registration__form__bottom__inp {
-  padding: 12px 272px 15px 17px;
+  padding: 0px 0px 0px 17px;
   width: 360px;
+  height: 44px;
   margin-bottom: 21px;
 }
 
@@ -1041,11 +1050,6 @@ details > summary:hover {
   line-height: 17px;
   color: #FFFFFF;
   background: #F16D7F;
-}
-
-.registration__form__bottom__link::after {
-  content: url(/img/Cards/strelca.svg);
-  margin-left: 20px;
 }
 
 .registration__form__bottom__link:hover {
@@ -1137,6 +1141,7 @@ details > summary:hover {
 .__right {
   margin-right: 41px;
 }
+
 
 .section-shoping {
   height: 148px;
