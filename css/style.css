@@ -7,7 +7,7 @@
 
 .promo {
   margin-bottom: 65px;
-  height: 764px;
+  height: calc(100vh - 86px);
   background-color: #F1E4E6;
   background-image: url(/img/Promo/Men.png);
   background-repeat: no-repeat;
@@ -1132,6 +1132,38 @@ details > summary:hover {
   margin-right: 31px;
 }
 
+.header__right__open {
+  color: #fff;
+  font-size: 35px;
+}
+
+.header__right__nav {
+  position: absolute;
+  top: 86px;
+  right: 0;
+  z-index: 10;
+}
+
+.nav {
+  overflow-y: scroll;
+  height: calc(100vh - 86px);
+  width: 232px;
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+#burger {
+  display: none;
+}
+
+#burger:checked + .header__right__nav {
+  opacity: 1;
+}
+
+#burger:not(:checked) + .header__right__nav {
+  opacity: 0;
+}
+
 .container {
   max-width: 1160px;
   padding: 0 20px;
@@ -1141,7 +1173,6 @@ details > summary:hover {
 .__right {
   margin-right: 41px;
 }
-
 
 .section-shoping {
   height: 148px;

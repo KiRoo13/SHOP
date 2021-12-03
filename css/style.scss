@@ -10,7 +10,7 @@
 //     PRPMO -----------------------------------------------------------------------------------------------
 .promo {
    margin-bottom: 65px;
-   height: 764px;
+   height: calc(100vh - 86px);
    background-color: #F1E4E6;
    background-image: url(/img/Promo/Men.png);
    background-repeat: no-repeat;

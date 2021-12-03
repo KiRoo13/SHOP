@@ -13,8 +13,35 @@
          margin-right: 31px;
       }
    }
+   &__right {
+      &__open {
+         color: #fff;
+         font-size: 35px;
+      }
+      &__nav {
+         position: absolute;
+         top: 86px;
+         right: 0;
+         z-index: 10;
+      }
+   }
 }
-
+.nav {
+   overflow-y: scroll;
+   height: calc(100vh - 86px);
+   width: 232px;
+   background: #FFFFFF;
+   padding: 20px;
+}
+#burger {
+   display: none;
+}
+#burger:checked + .header__right__nav {
+   opacity: 1;
+}
+#burger:not(:checked) + .header__right__nav {
+   opacity: 0;
+}
 .container {
    max-width: 1160px;
    padding: 0 20px;
@@ -24,6 +51,5 @@
 .__right {
    margin-right: 41px;
 }
-@media () {
-   
-}
+
+//---- MENU BURGER ---------------------------------------------------------------------------------------------------------
